@@ -1,0 +1,7 @@
+Handling billions of messages daily requires a scalable architecture. WhatsApp ensures this through:
+
+Horizontal Scaling: The workload is distributed across multiple servers. If demand increases, more servers are added, ensuring that the system can handle 
+higher loads without slowing down.
+
+Load Balancing: Load balancers distribute traffic evenly across different servers, preventing any server from becoming overwhelmed and ensuring that 
+users experience minimal delays.
