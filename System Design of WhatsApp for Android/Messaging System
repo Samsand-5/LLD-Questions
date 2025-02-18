@@ -1,0 +1,14 @@
+The core of WhatsApp is its messaging system, which allows users to send messages quickly and reliably.
+
+Key Design Aspects:
+Queue-based Messaging: Messages are queued and sent to the server. The server temporarily stores the message until the recipient comes online.
+
+Delivery Status: WhatsApp uses a simple system:
+
+Single tick: Message sent to the server.
+
+Double tick: Message delivered to the recipient.
+
+Blue tick: Message read by the recipient.
+
+Messages are stored on the server until they’re delivered and then deleted for security.
