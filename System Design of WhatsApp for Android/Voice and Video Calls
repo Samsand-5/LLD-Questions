@@ -1,0 +1,7 @@
+WhatsApp’s voice and video calling features are built using Voice over IP (VoIP) technology.
+
+WebRTC: Used for real-time peer-to-peer communication for voice and video calls.
+
+ICE (Interactive Connectivity Establishment): Enables calls to be established even when users are behind NAT (Network Address Translation).
+
+TURN/STUN Servers: These servers help negotiate the call connection and ensure smooth communication over the network.
