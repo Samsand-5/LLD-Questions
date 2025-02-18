@@ -1,0 +1,8 @@
+Airbnb’s backend services are hosted on a cloud platform (AWS/GCP) to ensure scalability and high availability. Each microservice runs in its own container (via Docker), 
+orchestrated by Kubernetes to handle traffic surges.
+
+Load Balancer: Distributes incoming traffic across multiple instances of the API gateway and backend services, ensuring no single server gets overwhelmed.
+
+CDN (Content Delivery Network): Used to cache static assets (property images, user profile photos) and serve them quickly to users, reducing latency.
+
+Auto-scaling: The backend infrastructure automatically scales based on demand, ensuring smooth user experience during peak seasons without downtimes.
