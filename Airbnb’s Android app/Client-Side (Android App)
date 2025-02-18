@@ -1,0 +1,20 @@
+The client-side architecture is where users interact with the application. This part of the system manages the presentation layer and handles communication with the backend. 
+Key components include:
+
+UI Layer: Built using Android’s XML layouts and Jetpack Compose to display listings, maps, and user profiles. It ensures a smooth user experience with intuitive navigation and 
+real-time updates.
+
+ViewModel (MVVM Architecture): The ViewModel holds the app’s logic and state for different screens. For example, it manages the data flow for the listing and booking screens, 
+decoupling UI elements from the business logic.
+
+Use Cases: Each user action (searching for properties, booking a stay, or writing a review) is encapsulated in a use case. This ensures that each function is isolated and 
+can be tested independently.
+
+Repository: The repository layer manages data sources, be it local (Room database) or remote (via APIs). It serves as a single point of truth for the app, ensuring efficient data 
+management and synchronization with the backend.
+
+Room Database (Local Caching): Room is used for local caching, allowing offline access to data. This is crucial for users traveling with limited network connectivity, 
+enabling them to view previously loaded properties or bookings.
+
+Network Layer (Retrofit/OkHttp): Handles API communication by sending HTTP requests and parsing JSON responses from the server. Retrofit, combined with OkHttp, 
+provides efficient network handling with automatic retries and caching mechanisms.
