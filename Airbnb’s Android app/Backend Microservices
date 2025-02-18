@@ -1,0 +1,23 @@
+Airbnb’s backend is built on microservices architecture, where different services handle different business functions. This approach enables better scalability and 
+isolation of concerns.
+
+Authentication Service: Manages user registration, login, and session management. It integrates with third-party identity providers like Google and Facebook for 
+single sign-on (SSO) functionality. Security is a priority, with two-factor authentication (2FA) and OAuth 2.0 for authorization.
+
+Property Listing Service: This service manages all CRUD operations for property listings, including property details, availability, pricing, and images. Property data is 
+stored in a NoSQL database like MongoDB for faster retrieval, while a search engine (e.g., Elasticsearch) powers the filtering and searching functionalities.
+
+Booking Service: Handles real-time booking, reservation management, and calendar synchronization. It uses an event-driven approach with message queues (Kafka/RabbitMQ) 
+to handle high-throughput operations, ensuring that users can book stays without conflicts or double-bookings.
+
+Payments Service: Integrates with multiple third-party payment providers (e.g., Stripe, PayPal) to process transactions securely. It supports various payment methods 
+(credit cards, bank transfers, digital wallets) and ensures PCI compliance. The service also handles refunds, payment disputes, and currency conversions.
+
+Notifications Service: Utilizes Firebase Cloud Messaging (FCM) for sending push notifications to the Android app. This service notifies users about 
+booking confirmations, reminders, or promotions.
+
+Reviews Service: This service manages the reviews and rating system. It allows users to leave reviews for properties and hosts after their stays. 
+To maintain trust, the review system is backed by moderation services, which detect and remove inappropriate or fake reviews.
+
+Search & Recommendations Service: A dedicated service using Elasticsearch and machine learning algorithms. This service provides personalized property recommendations based on 
+user behavior, preferences, and past bookings.
