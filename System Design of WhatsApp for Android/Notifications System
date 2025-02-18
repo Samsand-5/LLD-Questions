@@ -1,0 +1,5 @@
+WhatsApp uses Firebase Cloud Messaging (FCM) for push notifications to notify users about incoming messages, even when the app is in the background or closed.
+
+Priority Notifications: Messages are marked as high-priority to ensure immediate delivery.
+
+Offline Messaging: If a user is offline, the messages are stored on the server and delivered when the user comes back online, with notifications triggered accordingly.
