@@ -1,0 +1,4 @@
+Message Protocol: WhatsApp uses a highly optimized protocol based on XMPP (Extensible Messaging and Presence Protocol), supporting asynchronous communication, 
+making it perfect for real-time messaging.
+
+Event-driven Architecture: Events (like message receipt) trigger updates in real time, keeping users connected and in sync.
