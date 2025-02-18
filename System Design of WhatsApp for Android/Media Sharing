@@ -1,0 +1,7 @@
+WhatsApp allows users to share media such as images, videos, and audio. Handling large files efficiently requires optimization:
+
+Compression: Media files are compressed before being uploaded, reducing bandwidth usage and speeding up transfer times.
+
+Cloud Storage: Media files are temporarily stored in cloud servers (e.g., AWS S3) until they’re delivered to the recipient.
+
+Content Delivery Network (CDN): A CDN is used to distribute media files globally, minimizing download time based on user location.
