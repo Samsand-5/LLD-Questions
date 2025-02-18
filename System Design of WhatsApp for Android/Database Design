@@ -1,0 +1,10 @@
+WhatsApp leverages both local and server-side databases to ensure data integrity and synchronization:
+
+Local Database: WhatsApp uses SQLite to store chat histories, contacts, and sent messages locally, providing quick access even when offline.
+
+Server-side Database: To handle billions of messages daily, WhatsApp employs a sharded database architecture, where each shard handles a subset of users.
+
+Sharding Mechanism:
+User Sharding: Users are divided across database shards based on their ID. This method allows horizontal scaling, ensuring that the load is distributed across multiple databases.
+
+Replication and Backup: WhatsApp uses replication to keep databases synchronized across multiple servers, preventing data loss and providing redundancy.
