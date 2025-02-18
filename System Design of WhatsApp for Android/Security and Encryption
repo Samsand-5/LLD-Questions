@@ -1,0 +1,8 @@
+WhatsApp’s emphasis on security is evident through its use of end-to-end encryption (E2EE). This means that only the sender and recipient can read the messages.
+
+End-to-End Encryption: WhatsApp leverages the Signal Protocol, which uses unique keys for each message. Only the sender and recipient have the necessary keys to 
+decrypt the messages.
+
+Key Exchange: The Diffie-Hellman key exchange ensures secure key sharing between users without exposing the keys over the network.
+
+User Authentication: WhatsApp authenticates users via their phone number and links this with a public-private key pair, ensuring secure communication.
