@@ -1,0 +1,7 @@
+WhatsApp ensures synchronization across devices via background sync services:
+
+Push Notifications: Android’s Firebase Cloud Messaging (FCM) system is used to push notifications when a new message arrives.
+
+Persistent WebSocket Connections: WebSockets ensure real-time message receipt, enabling low-latency communication between clients and servers.
+
+If the WebSocket connection is interrupted, the app automatically reconnects and syncs any undelivered data with the server.
