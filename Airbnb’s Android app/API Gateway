@@ -1,0 +1,2 @@
+The API Gateway acts as the single entry point for all mobile and web clients, handling authentication and routing requests to the appropriate backend services.
+It provides security features, rate limiting, and versioning of APIs.
