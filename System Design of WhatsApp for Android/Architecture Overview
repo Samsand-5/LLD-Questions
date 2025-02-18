@@ -1,0 +1,7 @@
+WhatsApp’s architecture follows a client-server model that supports two-way communication between users. Here’s a high-level breakdown:
+
+Client: The Android app allows users to send/receive messages, images, voice, and video files.
+
+Server: WhatsApp servers act as intermediaries, ensuring message delivery, managing metadata, and keeping devices in sync.
+
+Persistent Connection: WhatsApp maintains a persistent connection between the client and server using TCP sockets, allowing for real-time communication with minimal latency.
