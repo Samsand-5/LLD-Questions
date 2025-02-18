@@ -1,0 +1,8 @@
+Airbnb’s Android app relies on several third-party services to ensure smooth operation:
+
+Payment Gateway: External services like Stripe and PayPal securely handle payments. These gateways support multi-currency transactions and ensure compliance 
+with global financial regulations.
+
+Firebase Cloud Messaging (FCM): FCM is used to deliver real-time notifications to users, ensuring they receive updates on bookings, trip reminders, or property promotions.
+
+Google Maps API: Provides location-based services within the app, allowing users to search properties by map and get directions to their stays.
