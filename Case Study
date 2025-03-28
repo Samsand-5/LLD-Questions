@@ -1,0 +1,86 @@
+abstract class Payment {
+    private double amount;
+    private String transactionId;
+
+    public Payment(double amount, String transactionId) {
+        this.amount = amount;
+        this.transactionId = transactionId;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public String getTransactionId() {
+        return transactionId;
+    }
+
+    public double applyDiscount() {
+        if (amount > 500) {
+            return amount * 0.1; 
+        }
+        return 0.0;
+    }
+
+    public abstract void processPayment();
+}
+
+class CreditCardPayment extends Payment {
+
+    public CreditCardPayment(double amount, String transactionId) {
+        super(amount, transactionId);
+    }
+
+    @Override
+    public void processPayment() {
+        System.out.println("\nProcessing Credit Card Payment...");
+        System.out.println("Transaction ID: " + getTransactionId());
+
+        double discount = applyDiscount();
+        double discountedAmount = getAmount() - discount;
+        double fee = discountedAmount * 0.02;  
+        double finalAmount = discountedAmount + fee;
+
+        System.out.printf("Original Amount: $%.2f%n", getAmount());
+        System.out.printf("Discount Applied: $%.2f%n", discount);
+        System.out.printf("Transaction Fee: $%.2f%n", fee);
+        System.out.printf("Final Payable Amount: $%.2f%n", finalAmount);
+
+        System.out.println("Credit Card Payment Successful!");
+    }
+}
+
+class PayPalPayment extends Payment {
+
+    public PayPalPayment(double amount, String transactionId) {
+        super(amount, transactionId);
+    }
+
+    @Override
+    public void processPayment() {
+        System.out.println("\nProcessing PayPal Payment...");
+        System.out.println("Transaction ID: " + getTransactionId());
+
+        double discount = applyDiscount();
+        double discountedAmount = getAmount() - discount;
+        double fee = discountedAmount * 0.03;  
+        double finalAmount = discountedAmount + fee;
+
+        System.out.printf("Original Amount: $%.2f%n", getAmount());
+        System.out.printf("Discount Applied: $%.2f%n", discount);
+        System.out.printf("Transaction Fee: $%.2f%n", fee);
+        System.out.printf("Final Payable Amount: $%.2f%n", finalAmount);
+
+        System.out.println("PayPal Payment Successful!");
+    }
+}
+
+public class PaymentSystem {
+    public static void main(String[] args) {
+        Payment creditCardPayment = new CreditCardPayment(600.0, "TXN12345");
+        creditCardPayment.processPayment();
+
+        Payment payPalPayment = new PayPalPayment(300.0, "TXN67890");
+        payPalPayment.processPayment();
+    }
+}
