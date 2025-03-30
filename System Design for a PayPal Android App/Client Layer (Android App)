@@ -1,0 +1,9 @@
+UI Components: Use Jetpack Compose for responsive and intuitive screens to facilitate transactions, view balances, and access notifications.
+
+Authentication: Secure logins with OAuth 2.0 or JWT tokens, and enable biometric authentication for additional security.
+
+Local Data Storage: Utilize Room Database or SharedPreferences for storing non-sensitive data like transaction history or preferences.
+
+Network Layer: Implement Retrofit or OkHttp for secure HTTPS API calls to the backend.
+
+Error Handling: Use centralized error handling with retry policies, leveraging WorkManager or Coroutine-based Retry.
