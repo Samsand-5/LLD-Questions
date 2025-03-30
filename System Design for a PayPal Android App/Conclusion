@@ -1,0 +1,4 @@
+A PayPal-like Android app requires a secure, reliable, and scalable system to manage millions of transactions while keeping data safe. 
+Key elements include a robust backend with microservices, secure payment handling, and real-time notifications, all supported by a cloud-based infrastructure. 
+Compliance with GDPR and PCI-DSS standards is critical for user data privacy and secure transactions. 
+This system design emphasizes the importance of security, scalability, and user experience, ensuring a payment app that’s both powerful and user-friendly.
