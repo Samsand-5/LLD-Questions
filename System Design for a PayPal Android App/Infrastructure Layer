@@ -1,0 +1,9 @@
+Hosting: Hosted on cloud platforms like AWS, GCP, or Azure for scalability.
+
+Load Balancer: Distributes traffic across servers for reliability.
+
+CDN: Speeds up static asset delivery.
+
+Database Replication and Backup: Ensures high availability and data safety with automated backups.
+
+Monitoring & Logging: Uses Prometheus, Grafana, and the ELK Stack (Elasticsearch, Logstash, Kibana) for observability.
