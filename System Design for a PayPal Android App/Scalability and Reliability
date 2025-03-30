@@ -1,0 +1,5 @@
+Load Balancing: Balances traffic for low latency and high availability.
+
+Auto-Scaling: Scales infrastructure in response to traffic spikes.
+
+Data Replication: Maintains data redundancy and reliable backups.
