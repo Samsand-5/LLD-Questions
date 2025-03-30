@@ -1,0 +1,15 @@
+User Management Service: Manages profiles, session handling, and secure multi-factor authentication.
+
+Transaction Service: Manages fund transfers, currency conversion, payment processing, and stores transaction history.
+
+Notification Service: Sends push notifications using Firebase Cloud Messaging (FCM) and email/SMS confirmations.
+
+Account & Balance Management: Manages account balances, deposits, and withdrawals, encrypting sensitive data securely.
+
+Security Layer: Encrypts sensitive data and implements fraud detection and audit logging.
+
+API Gateway: Authorizes and routes API requests with rate limiting and access controls.
+
+Microservices Architecture: Divides core services into independent microservices (User, Transaction, Notification) for scalability and fault isolation.
+
+Database: Centralized database for storing users and transactions, with caching via Redis or Memcached for fast access.
